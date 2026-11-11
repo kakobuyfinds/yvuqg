@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>OKEYHAUL spreadsheet : liens, tailles et photos QC</title>
+<meta name="description" content="Guide OKEYHAUL spreadsheet en français. Retrouvez les catégories CAFANS et apprenez à vérifier les liens produits, les mesures, les photos QC et le coût livré.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="OKEYHAUL spreadsheet : liens, tailles et photos QC">
+<meta property="og:description" content="Des catégories CAFANS et des conseils pour comparer les fiches, les mesures et les photos avant un achat.">
+<link rel="icon" href="https://www.cafans.com/favicon.ico">
+<link rel="preconnect" href="https://images.laced.com">
+<!-- Recherche éditoriale : Google France n’a pas pu être consulté directement. Dix domaines issus de la recherche Web ont servi à relever les thèmes, sans ordre de classement Google : okeyhaullinks.com, okey-haul.com, okeyhaulsheet.com, okeyhaul.net, okeyhaul.org, qcradar.com, kakobuyus.net, oopbuy.tips, gtbuy.tips et findhaul.com. -->
+<!-- Requêtes secondaires : guide OKEYHAUL, liens produits OKEYHAUL, photos QC OKEYHAUL, livraison OKEYHAUL. -->
+<style>
+:root{color-scheme:light;--ink:#11263e;--paper:#f5f9fc;--line:#cbdbe7;--accent:#075779;--blue:#e0f2f8;--muted:#40586b}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);background:var(--paper);font:1rem/1.6 system-ui,sans-serif}
+.wrap{width:min(1100px,calc(100% - 2rem));margin-inline:auto}
+a{color:var(--accent);text-underline-offset:.2em}
+a:focus-visible,summary:focus-visible{outline:3px solid #b34c08;outline-offset:3px}
+header{background:var(--ink);padding:.85rem 0}
+header a{color:white;font-weight:800;text-decoration:none}
+h1,h2,h3,p,figure{margin:0}
+h1,h2,h3{line-height:1.15}
+h1{font-size:clamp(2.15rem,5.4vw,4.5rem);letter-spacing:-.055em;overflow-wrap:anywhere}
+h2{font-size:clamp(1.45rem,3vw,2.15rem);letter-spacing:-.025em}
+h3{font-size:1.2rem}
+p{margin-top:.65rem}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(180px,32%);align-items:center;gap:clamp(1rem,4vw,3rem);padding:clamp(1rem,4vw,2.5rem);margin-top:1.25rem;background:var(--blue);border-radius:.9rem}
+.hero p{max-width:57ch}
+.cta{display:inline-block;margin-top:1rem;padding:.65rem 1rem;border-radius:.4rem;background:var(--accent);color:white;font-weight:750;text-decoration:none}
+img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;background:white;border-radius:.55rem}
+figcaption{margin-top:.4rem;color:var(--muted);font-size:.875rem}
+section,nav{margin-block:1.8rem}
+.categories{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,175px),1fr));gap:.5rem;list-style:none;padding:0;margin:.8rem 0 0}
+.categories a{display:flex;align-items:center;min-height:44px;height:100%;padding:.45rem .75rem;border:1px solid var(--line);border-radius:.4rem;background:white;font-weight:650;text-decoration:none}
+.categories a:hover{background:var(--blue);text-decoration:underline}
+.guides,.gallery{display:grid;gap:.85rem;margin-top:.85rem}
+.guides{grid-template-columns:repeat(2,minmax(0,1fr))}
+article{padding:1.1rem;background:white;border-left:3px solid var(--accent);border-radius:.35rem}
+.gallery{grid-template-columns:repeat(4,minmax(0,1fr))}
+details{border-bottom:1px solid var(--line);padding:.75rem 0}
+summary{cursor:pointer;font-weight:750}
+footer{border-top:1px solid var(--line);padding:1rem 0 1.5rem;color:var(--muted)}
+@media(max-width:600px){.hero,.guides{grid-template-columns:1fr}.hero figure{width:min(100%,250px)}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "name": "OKEYHAUL spreadsheet : liens, tailles et photos QC",
+      "description": "Guide OKEYHAUL spreadsheet en français. Retrouvez les catégories CAFANS et apprenez à vérifier les liens produits, les mesures, les photos QC et le coût livré.",
+      "inLanguage": "fr"
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "fr",
+      "mainEntity": [
+        {"@type":"Question","name":"Qu’est-ce qu’un OKEYHAUL spreadsheet ?","acceptedAnswer":{"@type":"Answer","text":"C’est un tableau de repérage qui regroupe des liens produits et des informations utiles à la comparaison, comme la catégorie, la variante et les mesures."}},
+        {"@type":"Question","name":"Que faire si un lien Weidian ou Taobao ne fonctionne plus ?","acceptedAnswer":{"@type":"Answer","text":"Recherchez la référence de l’article, le nom du vendeur ou le coloris, puis vérifiez que la nouvelle fiche correspond à la même variante avant de remplacer le lien."}},
+        {"@type":"Question","name":"Une photo QC suffit-elle à authentifier un article ?","acceptedAnswer":{"@type":"Answer","text":"Une photo QC permet de repérer certains défauts visibles et de comparer la variante reçue. L’authentification exige des éléments supplémentaires, notamment des informations fiables sur la provenance."}},
+        {"@type":"Question","name":"Comment comparer le coût livré en France ?","acceptedAnswer":{"@type":"Answer","text":"Pour chaque option, relevez le prix dans sa devise d’origine, la livraison locale et le devis international. Ajoutez les frais de service, de conversion ou d’importation lorsqu’ils s’appliquent, puis comparez les totaux en euros."}},
+        {"@type":"Question","name":"Où mènent les liens de cette page ?","acceptedAnswer":{"@type":"Answer","text":"Les liens de catégorie ouvrent les rubriques correspondantes de CAFANS. Les autres liens ouvrent la page d’accueil de CAFANS."}}
+      ]
+    }
+  ]
+}
+</script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/yvuqg/">
+</head>
+<body>
+<header><div class="wrap"><a href="https://www.cafans.com">cafans.com</a></div></header>
+<main class="wrap">
+  <div class="hero">
+    <div>
+      <h1>OKEYHAUL spreadsheet</h1>
+      <p>Un OKEYHAUL spreadsheet rassemble des liens produits pour comparer des articles avant un achat. Choisissez une catégorie CAFANS, puis relevez la variante, les mesures et les frais à vérifier sur la fiche source.</p>
+      <a class="cta" href="https://www.cafans.com">Parcourir le catalogue CAFANS</a>
+    </div>
+    <figure>
+      <img src="https://images.laced.com/products/b1ffb8fd-846b-4578-a7b1-6b0228a99fbd.jpg?auto=format&amp;fit=max&amp;q=75&amp;w=600" width="600" height="600" fetchpriority="high" loading="eager" alt="Basket basse Dior B27 blanche en cuir, vue de profil">
+      <figcaption>Dior B27 basse · référence visuelle</figcaption>
+    </figure>
+  </div>
+  <nav aria-labelledby="categories">
+    <h2 id="categories">Les catégories CAFANS</h2>
+    <ul class="categories">
+      <li><a href="https://cafans.com/category-911-Shoes.html">Chaussures</a></li>
+      <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Sweats et pulls</a></li>
+      <li><a href="https://cafans.com/category-913-T-Shirts.html">T-shirts</a></li>
+      <li><a href="https://cafans.com/category-914-Jackets.html">Vestes</a></li>
+      <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Pantalons et shorts</a></li>
+      <li><a href="https://cafans.com/category-916-Headwear.html">Casquettes et bonnets</a></li>
+      <li><a href="https://cafans.com/category-917-Sets.html">Ensembles</a></li>
+      <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Sous-vêtements</a></li>
+      <li><a href="https://cafans.com/category-919-Jersey.html">Maillots</a></li>
+      <li><a href="https://cafans.com/category-920-Accessories.html">Accessoires</a></li>
+    </ul>
+  </nav>
+  <section aria-labelledby="guide">
+    <h2 id="guide">Quatre vérifications avant de retenir un article</h2>
+    <div class="guides">
+      <article>
+        <h3>Retrouver la fiche d’origine</h3>
+        <p>Pour vérifier les liens produits OKEYHAUL, ouvrez la fiche Weidian, Taobao ou 1688. Relevez la référence du modèle, le nom du vendeur, la variante de couleur, la disponibilité par taille et la date de vérification. Si le lien est périmé, gardez ces détails pour retrouver l’article.</p>
+      </article>
+      <article>
+        <h3>Comparer les tailles en centimètres</h3>
+        <p>Pour un sweat, comparez la largeur à plat et la longueur des manches à celles d’un vêtement qui vous va. Pour un pantalon, regardez le tour de taille et la longueur d’entrejambe. Pour les baskets, comparez votre longueur de pied au guide des pointures de la fiche. Si elle indique la longueur de semelle intérieure, relevez-la séparément.</p>
+      </article>
+      <article>
+        <h3>Lire les photos QC à l’entrepôt</h3>
+        <p>Si des photos QC OKEYHAUL sont disponibles pour votre article, rapprochez-les de la variante commandée. Pour une paire, vérifiez les deux semelles et l’étiquette de pointure. Pour une veste, regardez les coutures et la fermeture. Pour une casquette, demandez une vue du système de réglage si celui-ci est masqué.</p>
+      </article>
+      <article>
+        <h3>Estimer le coût du colis</h3>
+        <p>Pour comparer les options de livraison OKEYHAUL, additionnez le prix de l’article et les frais de livraison locale, puis relevez le devis pour votre destination. Notez le poids réel et les dimensions du colis si la ligne facture au poids volumétrique. Vérifiez aussi les frais de conversion et les conditions de retour vendeur avant l’expédition.</p>
+      </article>
+    </div>
+  </section>
+  <section aria-labelledby="photos">
+    <h2 id="photos">Des détails à observer selon le type d’article</h2>
+    <p>Ces images illustrent des modèles de marque. Pour un achat, comparez les détails de la fiche et les photos de l’article concerné.</p>
+    <div class="gallery">
+      <figure>
+        <img src="https://product.hstatic.net/200000384421/product/nike-air-force-1--type-2-ct2584_0ee855eb20b74bfeba0144b2403a0005_grande.png" width="480" height="480" loading="lazy" decoding="async" alt="Basket Nike Air Force 1 Type 2 blanche à semelle épaisse">
+        <figcaption>Nike Air Force 1 Type 2 · profil de la semelle</figcaption>
+      </figure>
+      <figure>
+        <img src="https://la.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-double-face-knit-wool-travel-pants--HSN52WPWZ908_PM1_Look%20view.jpg?wid=400" width="400" height="400" loading="lazy" decoding="async" alt="Ensemble de voyage Louis Vuitton gris en maille porté avec une doudoune bleu marine">
+        <figcaption>Louis Vuitton · coupe de l’ensemble en maille</figcaption>
+      </figure>
+      <figure>
+        <img src="https://www.thebuybuystation.co/image/cache/catalog/324/style1-550x550h.jpg" width="550" height="550" loading="lazy" decoding="async" alt="Casquette Gucci en toile beige à motif GG">
+        <figcaption>Gucci · forme de la visière et motif de la toile</figcaption>
+      </figure>
+      <figure>
+        <img src="https://kream-phinf.pstatic.net/MjAyNTA3MzFfNzAg/MDAxNzUzODk4MTE1MjI3.WHGujKqNd9mT7aHEnAwoupW_atTkD6iQczFjUwc4HVMg.QIMaa4Wt7_-kLRs4KpRV-NQhSMFSfTE8Ggprf8CyWYwg.PNG/a_2fba6b33de3f40fc847572fc7a5614b4.png?type=w400" width="400" height="400" loading="lazy" decoding="async" alt="Bracelet Hermès Clic H orange au fermoir en H doré">
+        <figcaption>Hermès Clic H · fermoir et finition de l’émail</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section aria-labelledby="faq">
+    <h2 id="faq">Questions fréquentes</h2>
+    <details open>
+      <summary>Qu’est-ce qu’un OKEYHAUL spreadsheet ?</summary>
+      <p>C’est un tableau de repérage qui regroupe des liens produits et des informations utiles à la comparaison, comme la catégorie, la variante et les mesures.</p>
+    </details>
+    <details>
+      <summary>Que faire si un lien Weidian ou Taobao ne fonctionne plus ?</summary>
+      <p>Recherchez la référence de l’article, le nom du vendeur ou le coloris, puis vérifiez que la nouvelle fiche correspond à la même variante avant de remplacer le lien.</p>
+    </details>
+    <details>
+      <summary>Une photo QC suffit-elle à authentifier un article ?</summary>
+      <p>Une photo QC permet de repérer certains défauts visibles et de comparer la variante reçue. L’authentification exige des éléments supplémentaires, notamment des informations fiables sur la provenance.</p>
+    </details>
+    <details>
+      <summary>Comment comparer le coût livré en France ?</summary>
+      <p>Pour chaque option, relevez le prix dans sa devise d’origine, la livraison locale et le devis international. Ajoutez les frais de service, de conversion ou d’importation lorsqu’ils s’appliquent, puis comparez les totaux en euros.</p>
+    </details>
+    <details>
+      <summary>Où mènent les liens de cette page ?</summary>
+      <p>Les liens de catégorie ouvrent les rubriques correspondantes de CAFANS. Les autres liens ouvrent la page d’accueil de CAFANS.</p>
+    </details>
+  </section>
+</main>
+<footer><div class="wrap"><a href="https://www.cafans.com">cafans.com</a> · Guide indépendant de comparaison.</div></footer>
+</body>
+</html>
